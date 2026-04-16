@@ -24,7 +24,7 @@ function Home() {
         <div className="hero-overlay"></div>
         <div className="hero-content">
           <div className="badge-animation">Premier Conglomerate</div>
-          <h2 className="hero-title">Elevating Industry Standards</h2>
+          <h2 className="hero-title">LUCKY GROUP</h2>
           <p className="hero-subtitle">Lucky Group is a diverse portfolio of premier industries and services empowering progress across multiple sectors in Bangladesh.</p>
           <div className="hero-actions">
             <button className="cta-primary shine-btn" onClick={() => document.getElementById('services').scrollIntoView({ behavior: 'smooth' })}>
@@ -50,7 +50,7 @@ function Home() {
             <div className="client-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/5/53/H%26M-Logo.svg" alt="H&M Logo" style={{ filter: 'brightness(0) invert(1)' }} /></div>
             <div className="client-logo"><img src="https://placehold.co/200x60/transparent/ffffff?text=Dreamtex&font=Montserrat" alt="Dreamtex Logo" /></div>
             <div className="client-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/Walmart_logo.svg" alt="Walmart Logo" style={{ filter: 'brightness(0) invert(1)' }} /></div>
-            
+
             <div className="client-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/Tommy_Hilfiger_Logo.svg" alt="Tommy Hilfiger Logo" /></div>
             <div className="client-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Calvin_klein_logo.svg" alt="Calvin Klein Logo" style={{ filter: 'brightness(0) invert(1)' }} /></div>
             <div className="client-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Old_Navy_logo.svg" alt="Old Navy Logo" style={{ filter: 'brightness(0) invert(1)' }} /></div>
@@ -64,7 +64,7 @@ function Home() {
             <div className="client-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/5/53/H%26M-Logo.svg" alt="H&M Logo" style={{ filter: 'brightness(0) invert(1)' }} /></div>
             <div className="client-logo"><img src="https://placehold.co/200x60/transparent/ffffff?text=Dreamtex&font=Montserrat" alt="Dreamtex Logo" /></div>
             <div className="client-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/Walmart_logo.svg" alt="Walmart Logo" style={{ filter: 'brightness(0) invert(1)' }} /></div>
-            
+
             <div className="client-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/Tommy_Hilfiger_Logo.svg" alt="Tommy Hilfiger Logo" /></div>
             <div className="client-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Calvin_klein_logo.svg" alt="Calvin Klein Logo" style={{ filter: 'brightness(0) invert(1)' }} /></div>
             <div className="client-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Old_Navy_logo.svg" alt="Old Navy Logo" style={{ filter: 'brightness(0) invert(1)' }} /></div>
