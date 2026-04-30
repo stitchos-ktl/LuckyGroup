@@ -6,9 +6,9 @@ function Home() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const carouselImages = [
+    { url: 'https://images.unsplash.com/photo-1494412519320-aa613dfb7738?auto=format&fit=crop&q=70&w=1600', label: 'Shipping' },
     { url: 'https://images.unsplash.com/photo-1605280263929-1c42900fa2b7?auto=format&fit=crop&q=70&w=1600', label: 'Textile Industry' },
     { url: 'https://images.unsplash.com/photo-1595000572793-bc4264627d2c?auto=format&fit=crop&q=70&w=1600', label: 'Garments' },
-    { url: 'https://images.unsplash.com/photo-1494412519320-aa613dfb7738?auto=format&fit=crop&q=70&w=1600', label: 'Shipping' },
     { url: 'https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&q=70&w=1600', label: 'Import Export' },
     { url: 'https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=70&w=1600', label: 'Super Shop' }
   ];
