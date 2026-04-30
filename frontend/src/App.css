@@ -1145,3 +1145,222 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* Vivasoft-style Contact UI */
+.viva-contact-page {
+  width: 100%;
+  min-height: calc(100vh - 80px);
+}
+
+.viva-contact-hero {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  background: #ffffff;
+}
+
+.viva-contact-left {
+  flex: 1;
+  min-width: 400px;
+  background-color: #F0F8FF; /* Light Bluish from Vivasoft */
+  padding: 6rem 5% 6rem 8%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.viva-left-content {
+  max-width: 500px;
+}
+
+.viva-badge {
+  display: inline-block;
+  padding: 0.3rem 1rem;
+  background: rgba(90, 69, 255, 0.1);
+  color: #5A45FF;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 1.5rem;
+}
+
+.viva-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #0A0E27;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+  font-family: 'Inter', sans-serif;
+  letter-spacing: -1px;
+}
+
+.viva-subtitle {
+  font-size: 1.1rem;
+  color: #475569;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.viva-detail-item {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.viva-icon-box {
+  width: 45px;
+  height: 45px;
+  background: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  color: #5A45FF;
+}
+
+.viva-detail-item h5 {
+  font-size: 1rem;
+  color: #0A0E27;
+  margin-bottom: 0.2rem;
+  font-weight: 600;
+}
+
+.viva-detail-item p {
+  font-size: 0.95rem;
+  color: #64748b;
+  margin: 0;
+}
+
+.viva-locations-title {
+  font-size: 1.2rem;
+  color: #0A0E27;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+/* Right Side - Form */
+.viva-contact-right {
+  flex: 1;
+  min-width: 400px;
+  background-color: #ffffff;
+  padding: 6rem 8% 6rem 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.viva-form-card {
+  width: 100%;
+  max-width: 600px;
+}
+
+.viva-form-card h3 {
+  font-size: 2.2rem;
+  color: #0A0E27;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.5px;
+}
+
+.viva-form-subtitle {
+  color: #64748b;
+  margin-bottom: 2.5rem;
+}
+
+.viva-contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.viva-form-row {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.viva-form-row .viva-input-group {
+  flex: 1;
+}
+
+.viva-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: left;
+}
+
+.viva-input-group label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #0A0E27;
+}
+
+.viva-input-group input,
+.viva-input-group textarea {
+  padding: 1rem 1.2rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  background-color: #f8fafc;
+  font-family: inherit;
+  font-size: 1rem;
+  color: #0f172a;
+  transition: all 0.3s ease;
+}
+
+.viva-input-group input:focus,
+.viva-input-group textarea:focus {
+  outline: none;
+  border-color: #5A45FF;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 4px rgba(90, 69, 255, 0.1);
+}
+
+.viva-submit-btn {
+  background-color: #5A45FF;
+  color: #ffffff;
+  border: none;
+  border-radius: 30px;
+  padding: 1.2rem 2.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+  width: max-content;
+}
+
+.viva-submit-btn .arrow {
+  transition: transform 0.3s ease;
+}
+
+.viva-submit-btn:hover {
+  background-color: #4338ca;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(90, 69, 255, 0.3);
+}
+
+.viva-submit-btn:hover .arrow {
+  transform: translateX(5px);
+}
+
+@media (max-width: 900px) {
+  .viva-contact-hero {
+    flex-direction: column;
+  }
+  .viva-contact-left, .viva-contact-right {
+    min-width: 100%;
+    padding: 4rem 5%;
+  }
+  .viva-form-row {
+    flex-direction: column;
+  }
+}
