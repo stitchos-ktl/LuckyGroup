@@ -4,13 +4,16 @@
 :root {
   --bg-color: #ffffff;
   --card-bg: #f8fafc;
-  --primary-color: #4f46e5;
-  --primary-hover: #4338ca;
+  --primary-color: #2563eb;
+  --primary-hover: #1d4ed8;
   --text-main: #0f172a;
-  --text-muted: #64748b;
-  --accent: #0ea5e9;
+  --text-muted: #475569;
+  --accent: #3b82f6;
   --border-color: #e2e8f0;
-  --transition: all 0.3s ease;
+  --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  --box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  --glass-bg: rgba(255, 255, 255, 0.85);
+  --glass-border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 * {

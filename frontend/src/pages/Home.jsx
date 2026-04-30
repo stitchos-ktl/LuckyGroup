@@ -7,7 +7,6 @@ function Home() {
 
   const carouselImages = [
     { url: 'https://images.unsplash.com/photo-1494412519320-aa613dfb7738?auto=format&fit=crop&q=70&w=1600', label: 'Shipping' },
-    { url: 'https://images.unsplash.com/photo-1605280263929-1c42900fa2b7?auto=format&fit=crop&q=70&w=1600', label: 'Textile Industry' },
     { url: 'https://images.unsplash.com/photo-1595000572793-bc4264627d2c?auto=format&fit=crop&q=70&w=1600', label: 'Garments' },
     { url: 'https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&q=70&w=1600', label: 'Import Export' },
     { url: 'https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=70&w=1600', label: 'Super Shop' }
@@ -66,24 +65,24 @@ function Home() {
         <div className="clients-marquee-container">
           <div className="clients-marquee">
             {/* Original Items + New Items */}
-            <div className="client-logo"><img src="https://cdn.worldvectorlogo.com/logos/levis.svg" alt="Levi's Logo" /></div>
-            <div className="client-logo"><img src="https://cdn.worldvectorlogo.com/logos/h-m.svg" alt="H&M Logo" /></div>
-            <div className="client-logo"><img src="https://cdn.worldvectorlogo.com/logos/adidas-4.svg" alt="Adidas Logo" /></div>
-            <div className="client-logo"><img src="https://cdn.worldvectorlogo.com/logos/walmart.svg" alt="Walmart Logo" /></div>
-            <div className="client-logo"><img src="https://cdn.worldvectorlogo.com/logos/tommy-hilfiger-2.svg" alt="Tommy Hilfiger Logo" /></div>
-            <div className="client-logo"><img src="https://cdn.worldvectorlogo.com/logos/calvin-klein.svg" alt="Calvin Klein Logo" /></div>
-            <div className="client-logo"><img src="https://cdn.worldvectorlogo.com/logos/gap.svg" alt="Gap Logo" /></div>
-            <div className="client-logo"><img src="https://cdn.worldvectorlogo.com/logos/zara.svg" alt="Zara Logo" /></div>
+            <div className="client-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/1/11/Levi%27s_logo.svg" alt="Levi's Logo" /></div>
+            <div className="client-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/5/53/H%26M-Logo.svg" alt="H&M Logo" /></div>
+            <div className="client-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/2/20/Adidas_Logo.svg" alt="Adidas Logo" /></div>
+            <div className="client-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/Walmart_logo.svg" alt="Walmart Logo" /></div>
+            <div className="client-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/Tommy_Hilfiger_Logo.svg" alt="Tommy Hilfiger Logo" /></div>
+            <div className="client-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Calvin_klein_logo.svg" alt="Calvin Klein Logo" /></div>
+            <div className="client-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Gap_logo.svg" alt="Gap Logo" /></div>
+            <div className="client-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/f/fd/Zara_Logo.svg" alt="Zara Logo" /></div>
 
             {/* Duplicated for infinite effect */}
-            <div className="client-logo"><img src="https://cdn.worldvectorlogo.com/logos/levis.svg" alt="Levi's Logo" /></div>
-            <div className="client-logo"><img src="https://cdn.worldvectorlogo.com/logos/h-m.svg" alt="H&M Logo" /></div>
-            <div className="client-logo"><img src="https://cdn.worldvectorlogo.com/logos/adidas-4.svg" alt="Adidas Logo" /></div>
-            <div className="client-logo"><img src="https://cdn.worldvectorlogo.com/logos/walmart.svg" alt="Walmart Logo" /></div>
-            <div className="client-logo"><img src="https://cdn.worldvectorlogo.com/logos/tommy-hilfiger-2.svg" alt="Tommy Hilfiger Logo" /></div>
-            <div className="client-logo"><img src="https://cdn.worldvectorlogo.com/logos/calvin-klein.svg" alt="Calvin Klein Logo" /></div>
-            <div className="client-logo"><img src="https://cdn.worldvectorlogo.com/logos/gap.svg" alt="Gap Logo" /></div>
-            <div className="client-logo"><img src="https://cdn.worldvectorlogo.com/logos/zara.svg" alt="Zara Logo" /></div>
+            <div className="client-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/1/11/Levi%27s_logo.svg" alt="Levi's Logo" /></div>
+            <div className="client-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/5/53/H%26M-Logo.svg" alt="H&M Logo" /></div>
+            <div className="client-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/2/20/Adidas_Logo.svg" alt="Adidas Logo" /></div>
+            <div className="client-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/Walmart_logo.svg" alt="Walmart Logo" /></div>
+            <div className="client-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/Tommy_Hilfiger_Logo.svg" alt="Tommy Hilfiger Logo" /></div>
+            <div className="client-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Calvin_klein_logo.svg" alt="Calvin Klein Logo" /></div>
+            <div className="client-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Gap_logo.svg" alt="Gap Logo" /></div>
+            <div className="client-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/f/fd/Zara_Logo.svg" alt="Zara Logo" /></div>
           </div>
         </div>
       </section>

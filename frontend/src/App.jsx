@@ -13,7 +13,7 @@ function App() {
         <header className="header">
           <div className="logo-container">
             <Link to="/">
-              <img src="/logo.jpg" alt="KTL Logo" className="logo-image" onError={(e) => { e.target.onerror = null; e.target.src = "https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=100&q=80"; }} />
+              <img src="/lucky group logo.jpg" alt="Lucky Group Logo" className="logo-image" onError={(e) => { e.target.onerror = null; e.target.src = "https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=100&q=80"; }} />
             </Link>
             <h1>Lucky Group</h1>
           </div>
