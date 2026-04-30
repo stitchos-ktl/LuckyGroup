@@ -12,7 +12,7 @@ const services = [
     id: 1,
     name: 'Kattali Textile Limited',
     description: 'Premier garments and textile manufacturer dedicated to producing high-quality fabrics and modern clothing lines.',
-    image: 'https://images.unsplash.com/photo-1558024920-b41e1887dc32?w=500&q=80',
+    image: '/Ktl logo.jpg',
     category: 'Garments'
   },
   {

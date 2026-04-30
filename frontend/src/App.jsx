@@ -49,16 +49,16 @@ function App() {
                 
                 <div className="location-item">
                   <div className="loc-title">
-                    <span className="icon-map">◎</span> Head Office <a href="#" className="external-link">↗</a>
+                    <span className="icon-map">◎</span> Corporate Office <a href="#" className="external-link">↗</a>
                   </div>
-                  <div className="loc-address">BM Heights, 8th Floor, 318 Sk. Mujib Road, Agrabad,<br/>Chittagong</div>
+                  <div className="loc-address">Agrabad, BM Heights, Floor no 8,<br/>Chittagong, Bangladesh</div>
                 </div>
 
                 <div className="location-item">
                   <div className="loc-title">
-                    <span className="icon-map">◎</span> Production facility <a href="#" className="external-link">↗</a>
+                    <span className="icon-map">◎</span> Production Office <a href="#" className="external-link">↗</a>
                   </div>
-                  <div className="loc-address">North Kattali Industrial Area, Chittagong</div>
+                  <div className="loc-address">Ishan Mohajan Road, North Kattali, Chowdhury Bari,<br/>Chittagong, Bangladesh</div>
                 </div>
               </div>
             </div>

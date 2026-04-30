@@ -3,6 +3,14 @@ import React, { useState, useEffect } from 'react';
 function Home() {
   const [services, setServices] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  const carouselImages = [
+    { url: 'https://images.unsplash.com/photo-1595000572793-bc4264627d2c?auto=format&fit=crop&q=80&w=2000', label: 'Garments' },
+    { url: 'https://images.unsplash.com/photo-1494412519320-aa613dfb7738?auto=format&fit=crop&q=80&w=2000', label: 'Shipping' },
+    { url: 'https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&q=80&w=2000', label: 'Import Export' },
+    { url: 'https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=80&w=2000', label: 'Super Shop' }
+  ];
 
   useEffect(() => {
     fetch('http://localhost:5000/api/products')
@@ -15,12 +23,24 @@ function Home() {
         console.error('Error fetching data:', err);
         setLoading(false);
       });
+
+    const interval = setInterval(() => {
+      setCurrentSlide(prev => (prev + 1) % carouselImages.length);
+    }, 5000);
+
+    return () => clearInterval(interval);
   }, []);
 
   return (
     <div className="home-page">
       <section className="hero-professional">
-        <div className="hero-background-image"></div>
+        {carouselImages.map((img, index) => (
+          <div 
+            key={index} 
+            className={`carousel-background ${index === currentSlide ? 'active' : ''}`}
+            style={{ backgroundImage: `url(${img.url})` }}
+          ></div>
+        ))}
         <div className="hero-overlay"></div>
         <div className="hero-content">
           <div className="badge-animation">Premier Conglomerate</div>
@@ -45,32 +65,30 @@ function Home() {
         <div className="clients-marquee-container">
           <div className="clients-marquee">
             {/* Original Items + New Items */}
-            <div className="client-logo"><img src="https://placehold.co/200x60/transparent/ffffff?text=Winnerjeans&font=Montserrat" alt="Winnerjeans Logo" /></div>
-            <div className="client-logo"><img src="https://placehold.co/200x60/transparent/ffffff?text=Celebrity+Pink&font=Montserrat" alt="Celebrity Pink Logo" /></div>
-            <div className="client-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/5/53/H%26M-Logo.svg" alt="H&M Logo" style={{ filter: 'brightness(0) invert(1)' }} /></div>
-            <div className="client-logo"><img src="https://placehold.co/200x60/transparent/ffffff?text=Dreamtex&font=Montserrat" alt="Dreamtex Logo" /></div>
-            <div className="client-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/Walmart_logo.svg" alt="Walmart Logo" style={{ filter: 'brightness(0) invert(1)' }} /></div>
-
-            <div className="client-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/Tommy_Hilfiger_Logo.svg" alt="Tommy Hilfiger Logo" /></div>
-            <div className="client-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Calvin_klein_logo.svg" alt="Calvin Klein Logo" style={{ filter: 'brightness(0) invert(1)' }} /></div>
-            <div className="client-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Old_Navy_logo.svg" alt="Old Navy Logo" style={{ filter: 'brightness(0) invert(1)' }} /></div>
-            <div className="client-logo"><img src="https://placehold.co/200x60/transparent/ffffff?text=Denim&font=Montserrat" alt="Denim Logo" /></div>
-            <div className="client-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/1/11/TJ_Maxx_logo.svg" alt="TJ Maxx Logo" style={{ filter: 'brightness(0) invert(1)' }} /></div>
-            <div className="client-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/f/fd/Zara_Logo.svg" alt="Zara Logo" style={{ filter: 'brightness(0) invert(1)' }} /></div>
+            <div className="client-logo"><img src="https://logo.clearbit.com/levis.com" alt="Levi's Logo" /></div>
+            <div className="client-logo"><img src="https://logo.clearbit.com/guess.com" alt="Guess Logo" /></div>
+            <div className="client-logo"><img src="https://logo.clearbit.com/hm.com" alt="H&M Logo" /></div>
+            <div className="client-logo"><img src="https://logo.clearbit.com/adidas.com" alt="Adidas Logo" /></div>
+            <div className="client-logo"><img src="https://logo.clearbit.com/walmart.com" alt="Walmart Logo" /></div>
+            <div className="client-logo"><img src="https://logo.clearbit.com/tommy.com" alt="Tommy Hilfiger Logo" /></div>
+            <div className="client-logo"><img src="https://logo.clearbit.com/calvinklein.us" alt="Calvin Klein Logo" /></div>
+            <div className="client-logo"><img src="https://logo.clearbit.com/oldnavy.com" alt="Old Navy Logo" /></div>
+            <div className="client-logo"><img src="https://logo.clearbit.com/gap.com" alt="Gap Logo" /></div>
+            <div className="client-logo"><img src="https://logo.clearbit.com/tjmaxx.com" alt="TJ Maxx Logo" /></div>
+            <div className="client-logo"><img src="https://logo.clearbit.com/zara.com" alt="Zara Logo" /></div>
 
             {/* Duplicated for infinite effect */}
-            <div className="client-logo"><img src="https://placehold.co/200x60/transparent/ffffff?text=Winnerjeans&font=Montserrat" alt="Winnerjeans Logo" /></div>
-            <div className="client-logo"><img src="https://placehold.co/200x60/transparent/ffffff?text=Celebrity+Pink&font=Montserrat" alt="Celebrity Pink Logo" /></div>
-            <div className="client-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/5/53/H%26M-Logo.svg" alt="H&M Logo" style={{ filter: 'brightness(0) invert(1)' }} /></div>
-            <div className="client-logo"><img src="https://placehold.co/200x60/transparent/ffffff?text=Dreamtex&font=Montserrat" alt="Dreamtex Logo" /></div>
-            <div className="client-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/Walmart_logo.svg" alt="Walmart Logo" style={{ filter: 'brightness(0) invert(1)' }} /></div>
-
-            <div className="client-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/Tommy_Hilfiger_Logo.svg" alt="Tommy Hilfiger Logo" /></div>
-            <div className="client-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Calvin_klein_logo.svg" alt="Calvin Klein Logo" style={{ filter: 'brightness(0) invert(1)' }} /></div>
-            <div className="client-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Old_Navy_logo.svg" alt="Old Navy Logo" style={{ filter: 'brightness(0) invert(1)' }} /></div>
-            <div className="client-logo"><img src="https://placehold.co/200x60/transparent/ffffff?text=Denim&font=Montserrat" alt="Denim Logo" /></div>
-            <div className="client-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/1/11/TJ_Maxx_logo.svg" alt="TJ Maxx Logo" style={{ filter: 'brightness(0) invert(1)' }} /></div>
-            <div className="client-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/f/fd/Zara_Logo.svg" alt="Zara Logo" style={{ filter: 'brightness(0) invert(1)' }} /></div>
+            <div className="client-logo"><img src="https://logo.clearbit.com/levis.com" alt="Levi's Logo" /></div>
+            <div className="client-logo"><img src="https://logo.clearbit.com/guess.com" alt="Guess Logo" /></div>
+            <div className="client-logo"><img src="https://logo.clearbit.com/hm.com" alt="H&M Logo" /></div>
+            <div className="client-logo"><img src="https://logo.clearbit.com/adidas.com" alt="Adidas Logo" /></div>
+            <div className="client-logo"><img src="https://logo.clearbit.com/walmart.com" alt="Walmart Logo" /></div>
+            <div className="client-logo"><img src="https://logo.clearbit.com/tommy.com" alt="Tommy Hilfiger Logo" /></div>
+            <div className="client-logo"><img src="https://logo.clearbit.com/calvinklein.us" alt="Calvin Klein Logo" /></div>
+            <div className="client-logo"><img src="https://logo.clearbit.com/oldnavy.com" alt="Old Navy Logo" /></div>
+            <div className="client-logo"><img src="https://logo.clearbit.com/gap.com" alt="Gap Logo" /></div>
+            <div className="client-logo"><img src="https://logo.clearbit.com/tjmaxx.com" alt="TJ Maxx Logo" /></div>
+            <div className="client-logo"><img src="https://logo.clearbit.com/zara.com" alt="Zara Logo" /></div>
           </div>
         </div>
       </section>
