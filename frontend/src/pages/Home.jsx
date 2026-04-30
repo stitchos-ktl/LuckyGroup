@@ -6,10 +6,11 @@ function Home() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const carouselImages = [
-    { url: 'https://images.unsplash.com/photo-1595000572793-bc4264627d2c?auto=format&fit=crop&q=80&w=2000', label: 'Garments' },
-    { url: 'https://images.unsplash.com/photo-1494412519320-aa613dfb7738?auto=format&fit=crop&q=80&w=2000', label: 'Shipping' },
-    { url: 'https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&q=80&w=2000', label: 'Import Export' },
-    { url: 'https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=80&w=2000', label: 'Super Shop' }
+    { url: 'https://images.unsplash.com/photo-1605280263929-1c42900fa2b7?auto=format&fit=crop&q=70&w=1600', label: 'Textile Industry' },
+    { url: 'https://images.unsplash.com/photo-1595000572793-bc4264627d2c?auto=format&fit=crop&q=70&w=1600', label: 'Garments' },
+    { url: 'https://images.unsplash.com/photo-1494412519320-aa613dfb7738?auto=format&fit=crop&q=70&w=1600', label: 'Shipping' },
+    { url: 'https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&q=70&w=1600', label: 'Import Export' },
+    { url: 'https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=70&w=1600', label: 'Super Shop' }
   ];
 
   useEffect(() => {
@@ -65,30 +66,24 @@ function Home() {
         <div className="clients-marquee-container">
           <div className="clients-marquee">
             {/* Original Items + New Items */}
-            <div className="client-logo"><img src="https://logo.clearbit.com/levis.com" alt="Levi's Logo" /></div>
-            <div className="client-logo"><img src="https://logo.clearbit.com/guess.com" alt="Guess Logo" /></div>
-            <div className="client-logo"><img src="https://logo.clearbit.com/hm.com" alt="H&M Logo" /></div>
-            <div className="client-logo"><img src="https://logo.clearbit.com/adidas.com" alt="Adidas Logo" /></div>
-            <div className="client-logo"><img src="https://logo.clearbit.com/walmart.com" alt="Walmart Logo" /></div>
-            <div className="client-logo"><img src="https://logo.clearbit.com/tommy.com" alt="Tommy Hilfiger Logo" /></div>
-            <div className="client-logo"><img src="https://logo.clearbit.com/calvinklein.us" alt="Calvin Klein Logo" /></div>
-            <div className="client-logo"><img src="https://logo.clearbit.com/oldnavy.com" alt="Old Navy Logo" /></div>
-            <div className="client-logo"><img src="https://logo.clearbit.com/gap.com" alt="Gap Logo" /></div>
-            <div className="client-logo"><img src="https://logo.clearbit.com/tjmaxx.com" alt="TJ Maxx Logo" /></div>
-            <div className="client-logo"><img src="https://logo.clearbit.com/zara.com" alt="Zara Logo" /></div>
+            <div className="client-logo"><img src="https://cdn.worldvectorlogo.com/logos/levis.svg" alt="Levi's Logo" /></div>
+            <div className="client-logo"><img src="https://cdn.worldvectorlogo.com/logos/h-m.svg" alt="H&M Logo" /></div>
+            <div className="client-logo"><img src="https://cdn.worldvectorlogo.com/logos/adidas-4.svg" alt="Adidas Logo" /></div>
+            <div className="client-logo"><img src="https://cdn.worldvectorlogo.com/logos/walmart.svg" alt="Walmart Logo" /></div>
+            <div className="client-logo"><img src="https://cdn.worldvectorlogo.com/logos/tommy-hilfiger-2.svg" alt="Tommy Hilfiger Logo" /></div>
+            <div className="client-logo"><img src="https://cdn.worldvectorlogo.com/logos/calvin-klein.svg" alt="Calvin Klein Logo" /></div>
+            <div className="client-logo"><img src="https://cdn.worldvectorlogo.com/logos/gap.svg" alt="Gap Logo" /></div>
+            <div className="client-logo"><img src="https://cdn.worldvectorlogo.com/logos/zara.svg" alt="Zara Logo" /></div>
 
             {/* Duplicated for infinite effect */}
-            <div className="client-logo"><img src="https://logo.clearbit.com/levis.com" alt="Levi's Logo" /></div>
-            <div className="client-logo"><img src="https://logo.clearbit.com/guess.com" alt="Guess Logo" /></div>
-            <div className="client-logo"><img src="https://logo.clearbit.com/hm.com" alt="H&M Logo" /></div>
-            <div className="client-logo"><img src="https://logo.clearbit.com/adidas.com" alt="Adidas Logo" /></div>
-            <div className="client-logo"><img src="https://logo.clearbit.com/walmart.com" alt="Walmart Logo" /></div>
-            <div className="client-logo"><img src="https://logo.clearbit.com/tommy.com" alt="Tommy Hilfiger Logo" /></div>
-            <div className="client-logo"><img src="https://logo.clearbit.com/calvinklein.us" alt="Calvin Klein Logo" /></div>
-            <div className="client-logo"><img src="https://logo.clearbit.com/oldnavy.com" alt="Old Navy Logo" /></div>
-            <div className="client-logo"><img src="https://logo.clearbit.com/gap.com" alt="Gap Logo" /></div>
-            <div className="client-logo"><img src="https://logo.clearbit.com/tjmaxx.com" alt="TJ Maxx Logo" /></div>
-            <div className="client-logo"><img src="https://logo.clearbit.com/zara.com" alt="Zara Logo" /></div>
+            <div className="client-logo"><img src="https://cdn.worldvectorlogo.com/logos/levis.svg" alt="Levi's Logo" /></div>
+            <div className="client-logo"><img src="https://cdn.worldvectorlogo.com/logos/h-m.svg" alt="H&M Logo" /></div>
+            <div className="client-logo"><img src="https://cdn.worldvectorlogo.com/logos/adidas-4.svg" alt="Adidas Logo" /></div>
+            <div className="client-logo"><img src="https://cdn.worldvectorlogo.com/logos/walmart.svg" alt="Walmart Logo" /></div>
+            <div className="client-logo"><img src="https://cdn.worldvectorlogo.com/logos/tommy-hilfiger-2.svg" alt="Tommy Hilfiger Logo" /></div>
+            <div className="client-logo"><img src="https://cdn.worldvectorlogo.com/logos/calvin-klein.svg" alt="Calvin Klein Logo" /></div>
+            <div className="client-logo"><img src="https://cdn.worldvectorlogo.com/logos/gap.svg" alt="Gap Logo" /></div>
+            <div className="client-logo"><img src="https://cdn.worldvectorlogo.com/logos/zara.svg" alt="Zara Logo" /></div>
           </div>
         </div>
       </section>
