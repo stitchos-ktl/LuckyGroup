@@ -3,11 +3,6 @@ import React from 'react';
 function About() {
   return (
     <div className="page-wrapper fade-in-page">
-      <div className="about-hero">
-        <h2 className="section-title">About Lucky Group</h2>
-        <p className="about-subtitle">Pioneering Excellence. Empowering Progress. Transforming Industries.</p>
-      </div>
-
       <section className="about-section">
         <div className="about-content">
           <div className="mission-vision-grid">
@@ -32,23 +27,31 @@ function About() {
             <h4 className="board-title">Meet Our Leadership</h4>
             <p className="board-subtitle">Guiding our vision with decades of industry expertise.</p>
             <div className="directors-grid">
-              <div className="director-card">
-                <div className="director-avatar">NC</div>
+              <div className="director-card floating-box delay-1">
+                <div className="director-image-wrapper">
+                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80" alt="Nasreen Chowdhury" className="director-img" />
+                </div>
                 <h5>Nasreen Chowdhury</h5>
                 <p className="director-role">Chairman</p>
               </div>
-              <div className="director-card">
-                <div className="director-avatar">IHC</div>
+              <div className="director-card floating-box delay-2">
+                <div className="director-image-wrapper">
+                  <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80" alt="Imdadul Haque Chowdhury" className="director-img" />
+                </div>
                 <h5>Imdadul Haque Chowdhury</h5>
                 <p className="director-role">Managing Director (MD)</p>
               </div>
-              <div className="director-card">
-                <div className="director-avatar">IC</div>
+              <div className="director-card floating-box delay-3">
+                <div className="director-image-wrapper">
+                  <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&q=80" alt="Ishad Chowdhury" className="director-img" />
+                </div>
                 <h5>Ishad Chowdhury</h5>
                 <p className="director-role">Deputy Managing Director (DMD)</p>
               </div>
-              <div className="director-card">
-                <div className="director-avatar">MAA</div>
+              <div className="director-card floating-box delay-4">
+                <div className="director-image-wrapper">
+                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80" alt="Makarram Anawar Alvi" className="director-img" />
+                </div>
                 <h5>Makarram Anawar Alvi</h5>
                 <p className="director-role">Director</p>
               </div>
